@@ -1,0 +1,1253 @@
+[
+    {
+        "id": 1,
+        "name_kr": "검정",
+        "name_en": "Black",
+        "hex": "#000",
+        "r": 0,
+        "g": 0,
+        "b": 0
+    },
+    {
+        "id": 2,
+        "name_kr": "해군",
+        "name_en": "Navy Blue",
+        "hex": "#000080",
+        "r": 0,
+        "g": 0,
+        "b": 128
+    },
+    {
+        "id": 3,
+        "name_kr": "진한 파란색",
+        "name_en": "Dark Blue",
+        "hex": "#00008b",
+        "r": 0,
+        "g": 0,
+        "b": 139
+    },
+    {
+        "id": 4,
+        "name_kr": "미디엄 블루",
+        "name_en": "Medium Blue",
+        "hex": "#0000cd",
+        "r": 0,
+        "g": 0,
+        "b": 205
+    },
+    {
+        "id": 5,
+        "name_kr": "푸른",
+        "name_en": "Blue",
+        "hex": "#00f",
+        "r": 0,
+        "g": 0,
+        "b": 255
+    },
+    {
+        "id": 6,
+        "name_kr": "짙은 녹색",
+        "name_en": "Deep Green",
+        "hex": "#006400",
+        "r": 0,
+        "g": 100,
+        "b": 0
+    },
+    {
+        "id": 7,
+        "name_kr": "초록",
+        "name_en": "Green (Html/Css Green)",
+        "hex": "#008000",
+        "r": 0,
+        "g": 128,
+        "b": 0
+    },
+    {
+        "id": 8,
+        "name_kr": "물오리",
+        "name_en": "Teal",
+        "hex": "#008080",
+        "r": 0,
+        "g": 128,
+        "b": 128
+    },
+    {
+        "id": 9,
+        "name_kr": "진한 청록색",
+        "name_en": "Dark Cyan",
+        "hex": "#008b8b",
+        "r": 0,
+        "g": 139,
+        "b": 139
+    },
+    {
+        "id": 10,
+        "name_kr": "깊은 하늘색",
+        "name_en": "Capri",
+        "hex": "#00bfff",
+        "r": 0,
+        "g": 191,
+        "b": 255
+    },
+    {
+        "id": 11,
+        "name_kr": "진한 청록색",
+        "name_en": "Dark Turquoise",
+        "hex": "#00ced1",
+        "r": 0,
+        "g": 206,
+        "b": 209
+    },
+    {
+        "id": 12,
+        "name_kr": "중간 봄 녹색",
+        "name_en": "Medium Spring Green",
+        "hex": "#00fa9a",
+        "r": 0,
+        "g": 250,
+        "b": 154
+    },
+    {
+        "id": 13,
+        "name_kr": "라임",
+        "name_en": "Lime (Web) (X11 Green)",
+        "hex": "#0f0",
+        "r": 0,
+        "g": 255,
+        "b": 0
+    },
+    {
+        "id": 14,
+        "name_kr": "봄 녹색",
+        "name_en": "Spring Green",
+        "hex": "#00ff7f",
+        "r": 0,
+        "g": 255,
+        "b": 127
+    },
+    {
+        "id": 15,
+        "name_kr": "아쿠아",
+        "name_en": "Aqua",
+        "hex": "#0ff",
+        "r": 0,
+        "g": 255,
+        "b": 255
+    },
+    {
+        "id": 16,
+        "name_kr": "청록색",
+        "name_en": "Cyan",
+        "hex": "#0ff",
+        "r": 0,
+        "g": 255,
+        "b": 255
+    },
+    {
+        "id": 17,
+        "name_kr": "자정 블루",
+        "name_en": "Midnight Blue",
+        "hex": "#191970",
+        "r": 25,
+        "g": 25,
+        "b": 112
+    },
+    {
+        "id": 18,
+        "name_kr": "다저 블루",
+        "name_en": "Dodger Blue",
+        "hex": "#1e90ff",
+        "r": 30,
+        "g": 144,
+        "b": 255
+    },
+    {
+        "id": 19,
+        "name_kr": "밝은 바다 녹색",
+        "name_en": "Light Sea Green",
+        "hex": "#20b2aa",
+        "r": 32,
+        "g": 178,
+        "b": 170
+    },
+    {
+        "id": 20,
+        "name_kr": "숲 녹색",
+        "name_en": "Forest Green (Web)",
+        "hex": "#228b22",
+        "r": 34,
+        "g": 139,
+        "b": 34
+    },
+    {
+        "id": 21,
+        "name_kr": "바다 녹색",
+        "name_en": "Sea Green",
+        "hex": "#2e8b57",
+        "r": 46,
+        "g": 139,
+        "b": 87
+    },
+    {
+        "id": 22,
+        "name_kr": "다크 슬레이트 그레이",
+        "name_en": "Dark Slate Gray",
+        "hex": "#2f4f4f",
+        "r": 47,
+        "g": 79,
+        "b": 79
+    },
+    {
+        "id": 23,
+        "name_kr": "라임 그린",
+        "name_en": "Lime Green",
+        "hex": "#32cd32",
+        "r": 50,
+        "g": 205,
+        "b": 50
+    },
+    {
+        "id": 24,
+        "name_kr": "중간 바다 녹색",
+        "name_en": "Medium Sea Green",
+        "hex": "#3cb371",
+        "r": 60,
+        "g": 179,
+        "b": 113
+    },
+    {
+        "id": 25,
+        "name_kr": "터키 옥",
+        "name_en": "Turquoise",
+        "hex": "#40e0d0",
+        "r": 64,
+        "g": 224,
+        "b": 208
+    },
+    {
+        "id": 26,
+        "name_kr": "로얄 블루",
+        "name_en": "Royal Blue (Web)",
+        "hex": "#4169e1",
+        "r": 65,
+        "g": 105,
+        "b": 225
+    },
+    {
+        "id": 27,
+        "name_kr": "스틸 블루",
+        "name_en": "Steel Blue",
+        "hex": "#4682b4",
+        "r": 70,
+        "g": 130,
+        "b": 180
+    },
+    {
+        "id": 28,
+        "name_kr": "다크 슬레이트 블루",
+        "name_en": "Dark Slate Blue",
+        "hex": "#483d8b",
+        "r": 72,
+        "g": 61,
+        "b": 139
+    },
+    {
+        "id": 29,
+        "name_kr": "중간 청록색",
+        "name_en": "Medium Turquoise",
+        "hex": "#48d1cc",
+        "r": 72,
+        "g": 209,
+        "b": 204
+    },
+    {
+        "id": 30,
+        "name_kr": "남빛",
+        "name_en": "Indigo (Web)",
+        "hex": "#4b0082",
+        "r": 75,
+        "g": 0,
+        "b": 130
+    },
+    {
+        "id": 31,
+        "name_kr": "진한 올리브 녹색",
+        "name_en": "Dark Olive Green",
+        "hex": "#556b2f",
+        "r": 85,
+        "g": 107,
+        "b": 47
+    },
+    {
+        "id": 32,
+        "name_kr": "생도 블루",
+        "name_en": "Cadet Blue",
+        "hex": "#5f9ea0",
+        "r": 95,
+        "g": 158,
+        "b": 160
+    },
+    {
+        "id": 33,
+        "name_kr": "옥수수 꽃 블루",
+        "name_en": "Cornflower Blue",
+        "hex": "#6495ed",
+        "r": 100,
+        "g": 149,
+        "b": 237
+    },
+    {
+        "id": 34,
+        "name_kr": "중형 아쿠아 마린",
+        "name_en": "Medium Aquamarine",
+        "hex": "#66cdaa",
+        "r": 102,
+        "g": 205,
+        "b": 170
+    },
+    {
+        "id": 35,
+        "name_kr": "희미한 회색",
+        "name_en": "Dim Gray",
+        "hex": "#696969",
+        "r": 105,
+        "g": 105,
+        "b": 105
+    },
+    {
+        "id": 36,
+        "name_kr": "슬레이트 블루",
+        "name_en": "Slate Blue",
+        "hex": "#6a5acd",
+        "r": 106,
+        "g": 90,
+        "b": 205
+    },
+    {
+        "id": 37,
+        "name_kr": "올리브 단조로운",
+        "name_en": "Olive Drab (Web) (Olive Drab #3)",
+        "hex": "#6b8e23",
+        "r": 107,
+        "g": 142,
+        "b": 35
+    },
+    {
+        "id": 38,
+        "name_kr": "슬레이트 그레이",
+        "name_en": "Slate Gray",
+        "hex": "#708090",
+        "r": 112,
+        "g": 128,
+        "b": 144
+    },
+    {
+        "id": 39,
+        "name_kr": "라이트 슬레이트 그레이",
+        "name_en": "Light Slate Gray",
+        "hex": "#789",
+        "r": 119,
+        "g": 136,
+        "b": 153
+    },
+    {
+        "id": 40,
+        "name_kr": "중간 슬레이트 블루",
+        "name_en": "Medium Slate Blue",
+        "hex": "#7b68ee",
+        "r": 123,
+        "g": 104,
+        "b": 238
+    },
+    {
+        "id": 41,
+        "name_kr": "잔디 녹색",
+        "name_en": "Lawn Green",
+        "hex": "#7cfc00",
+        "r": 124,
+        "g": 252,
+        "b": 0
+    },
+    {
+        "id": 42,
+        "name_kr": "차트 재사용",
+        "name_en": "Chartreuse (Web)",
+        "hex": "#7fff00",
+        "r": 127,
+        "g": 255,
+        "b": 0
+    },
+    {
+        "id": 43,
+        "name_kr": "아쿠아 마린",
+        "name_en": "Aquamarine",
+        "hex": "#7fffd4",
+        "r": 127,
+        "g": 255,
+        "b": 212
+    },
+    {
+        "id": 44,
+        "name_kr": "적갈색",
+        "name_en": "Maroon (Html/Css)",
+        "hex": "#800000",
+        "r": 128,
+        "g": 0,
+        "b": 0
+    },
+    {
+        "id": 45,
+        "name_kr": "보라색",
+        "name_en": "Purple (Html/Css)",
+        "hex": "#800080",
+        "r": 128,
+        "g": 0,
+        "b": 128
+    },
+    {
+        "id": 46,
+        "name_kr": "올리브",
+        "name_en": "Olive",
+        "hex": "#808000",
+        "r": 128,
+        "g": 128,
+        "b": 0
+    },
+    {
+        "id": 47,
+        "name_kr": "회색",
+        "name_en": "Gray",
+        "hex": "#808080",
+        "r": 128,
+        "g": 128,
+        "b": 128
+    },
+    {
+        "id": 48,
+        "name_kr": "하늘색",
+        "name_en": "Sky Blue",
+        "hex": "#87ceeb",
+        "r": 135,
+        "g": 206,
+        "b": 235
+    },
+    {
+        "id": 49,
+        "name_kr": "연한 하늘색",
+        "name_en": "Light Sky Blue",
+        "hex": "#87cefa",
+        "r": 135,
+        "g": 206,
+        "b": 250
+    },
+    {
+        "id": 50,
+        "name_kr": "블루 바이올렛",
+        "name_en": "Blue-Violet",
+        "hex": "#8a2be2",
+        "r": 138,
+        "g": 43,
+        "b": 226
+    },
+    {
+        "id": 51,
+        "name_kr": "진한 빨간색",
+        "name_en": "Dark Red",
+        "hex": "#8b0000",
+        "r": 139,
+        "g": 0,
+        "b": 0
+    },
+    {
+        "id": 52,
+        "name_kr": "진한 자홍색",
+        "name_en": "Dark Magenta",
+        "hex": "#8b008b",
+        "r": 139,
+        "g": 0,
+        "b": 139
+    },
+    {
+        "id": 53,
+        "name_kr": "새들 브라운",
+        "name_en": "Saddle Brown",
+        "hex": "#8b4513",
+        "r": 139,
+        "g": 69,
+        "b": 19
+    },
+    {
+        "id": 54,
+        "name_kr": "어두운 바다 녹색",
+        "name_en": "Dark Sea Green",
+        "hex": "#8fbc8f",
+        "r": 143,
+        "g": 188,
+        "b": 143
+    },
+    {
+        "id": 55,
+        "name_kr": "연한 초록색",
+        "name_en": "Light Green",
+        "hex": "#90ee90",
+        "r": 144,
+        "g": 238,
+        "b": 144
+    },
+    {
+        "id": 56,
+        "name_kr": "중간 보라색",
+        "name_en": "Medium Purple",
+        "hex": "#9370db",
+        "r": 147,
+        "g": 112,
+        "b": 219
+    },
+    {
+        "id": 57,
+        "name_kr": "진한 보라색",
+        "name_en": "Dark Violet",
+        "hex": "#9400d3",
+        "r": 148,
+        "g": 0,
+        "b": 211
+    },
+    {
+        "id": 58,
+        "name_kr": "옅은 녹색",
+        "name_en": "Pale Green",
+        "hex": "#98fb98",
+        "r": 152,
+        "g": 251,
+        "b": 152
+    },
+    {
+        "id": 59,
+        "name_kr": "어두운 난초",
+        "name_en": "Dark Orchid",
+        "hex": "#9932cc",
+        "r": 153,
+        "g": 50,
+        "b": 204
+    },
+    {
+        "id": 60,
+        "name_kr": "연두색",
+        "name_en": "Yellow-Green",
+        "hex": "#9acd32",
+        "r": 154,
+        "g": 205,
+        "b": 50
+    },
+    {
+        "id": 61,
+        "name_kr": "시에나",
+        "name_en": "Sienna",
+        "hex": "#A0522D",
+        "r": 160,
+        "g": 82,
+        "b": 45
+    },
+    {
+        "id": 62,
+        "name_kr": "갈색",
+        "name_en": "Brown (Web)",
+        "hex": "#a52a2a",
+        "r": 165,
+        "g": 42,
+        "b": 42
+    },
+    {
+        "id": 63,
+        "name_kr": "진한 회색",
+        "name_en": "Dark Gray",
+        "hex": "#a9a9a9",
+        "r": 169,
+        "g": 169,
+        "b": 169
+    },
+    {
+        "id": 64,
+        "name_kr": "하늘색",
+        "name_en": "Light Blue",
+        "hex": "#add8e6",
+        "r": 173,
+        "g": 216,
+        "b": 230
+    },
+    {
+        "id": 65,
+        "name_kr": "녹색 황색",
+        "name_en": "Green-Yellow",
+        "hex": "#adff2f",
+        "r": 173,
+        "g": 255,
+        "b": 47
+    },
+    {
+        "id": 66,
+        "name_kr": "창백한 청록색",
+        "name_en": "Pale Blue",
+        "hex": "#afeeee",
+        "r": 175,
+        "g": 238,
+        "b": 238
+    },
+    {
+        "id": 67,
+        "name_kr": "라이트 스틸 블루",
+        "name_en": "Light Steel Blue",
+        "hex": "#B0C4DE",
+        "r": 176,
+        "g": 196,
+        "b": 222
+    },
+    {
+        "id": 68,
+        "name_kr": "파우더 블루",
+        "name_en": "Powder Blue (Web)",
+        "hex": "#b0e0e6",
+        "r": 176,
+        "g": 224,
+        "b": 230
+    },
+    {
+        "id": 69,
+        "name_kr": "내화 벽돌",
+        "name_en": "Firebrick",
+        "hex": "#b22222",
+        "r": 178,
+        "g": 34,
+        "b": 34
+    },
+    {
+        "id": 70,
+        "name_kr": "진한 황금 막대",
+        "name_en": "Dark Goldenrod",
+        "hex": "#b8860b",
+        "r": 184,
+        "g": 134,
+        "b": 11
+    },
+    {
+        "id": 71,
+        "name_kr": "중간 난초",
+        "name_en": "Medium Orchid",
+        "hex": "#ba55d3",
+        "r": 186,
+        "g": 85,
+        "b": 211
+    },
+    {
+        "id": 72,
+        "name_kr": "장미 빛 갈색",
+        "name_en": "Rosy Brown",
+        "hex": "#bc8f8f",
+        "r": 188,
+        "g": 143,
+        "b": 143
+    },
+    {
+        "id": 73,
+        "name_kr": "진한 카키",
+        "name_en": "Dark Khaki",
+        "hex": "#bdb76b",
+        "r": 189,
+        "g": 183,
+        "b": 107
+    },
+    {
+        "id": 74,
+        "name_kr": "은",
+        "name_en": "Silver",
+        "hex": "#c0c0c0",
+        "r": 192,
+        "g": 192,
+        "b": 192
+    },
+    {
+        "id": 75,
+        "name_kr": "중간 보라색 빨간색",
+        "name_en": "Medium Violet-Red",
+        "hex": "#c71585",
+        "r": 199,
+        "g": 21,
+        "b": 133
+    },
+    {
+        "id": 76,
+        "name_kr": "인디언 레드",
+        "name_en": "Indian Red",
+        "hex": "#cd5c5c",
+        "r": 205,
+        "g": 92,
+        "b": 92
+    },
+    {
+        "id": 77,
+        "name_kr": "페루",
+        "name_en": "Peru",
+        "hex": "#cd853f",
+        "r": 205,
+        "g": 133,
+        "b": 63
+    },
+    {
+        "id": 78,
+        "name_kr": "초콜릿",
+        "name_en": "Chocolate (Web)",
+        "hex": "#d2691e",
+        "r": 210,
+        "g": 105,
+        "b": 30
+    },
+    {
+        "id": 79,
+        "name_kr": "황갈색",
+        "name_en": "Tan",
+        "hex": "#d2b48c",
+        "r": 210,
+        "g": 180,
+        "b": 140
+    },
+    {
+        "id": 80,
+        "name_kr": "밝은 회색",
+        "name_en": "Light Gray",
+        "hex": "#d3d3d3",
+        "r": 211,
+        "g": 211,
+        "b": 211
+    },
+    {
+        "id": 81,
+        "name_kr": "엉겅퀴 훈장",
+        "name_en": "Thistle",
+        "hex": "#d8bfd8",
+        "r": 216,
+        "g": 191,
+        "b": 216
+    },
+    {
+        "id": 82,
+        "name_kr": "난초",
+        "name_en": "Orchid",
+        "hex": "#da70d6",
+        "r": 218,
+        "g": 112,
+        "b": 214
+    },
+    {
+        "id": 83,
+        "name_kr": "황금 막대",
+        "name_en": "Goldenrod",
+        "hex": "#daa520",
+        "r": 218,
+        "g": 165,
+        "b": 32
+    },
+    {
+        "id": 84,
+        "name_kr": "옅은 보라색 빨간색",
+        "name_en": "Pale Violet-Red",
+        "hex": "#db7093",
+        "r": 219,
+        "g": 112,
+        "b": 147
+    },
+    {
+        "id": 85,
+        "name_kr": "진홍",
+        "name_en": "Crimson",
+        "hex": "#dc143c",
+        "r": 220,
+        "g": 20,
+        "b": 60
+    },
+    {
+        "id": 86,
+        "name_kr": "옅은 푸른빛 회색",
+        "name_en": "Gainsboro",
+        "hex": "#dcdcdc",
+        "r": 220,
+        "g": 220,
+        "b": 220
+    },
+    {
+        "id": 87,
+        "name_kr": "자두",
+        "name_en": "Plum (Web)",
+        "hex": "#dda0dd",
+        "r": 221,
+        "g": 160,
+        "b": 221
+    },
+    {
+        "id": 88,
+        "name_kr": "건장한 나무",
+        "name_en": "Burlywood",
+        "hex": "#deb887",
+        "r": 222,
+        "g": 184,
+        "b": 135
+    },
+    {
+        "id": 89,
+        "name_kr": "연한 청록색",
+        "name_en": "Light Cyan",
+        "hex": "#e0ffff",
+        "r": 224,
+        "g": 255,
+        "b": 255
+    },
+    {
+        "id": 90,
+        "name_kr": "라벤더",
+        "name_en": "Lavender (Web)",
+        "hex": "#e6e6fa",
+        "r": 230,
+        "g": 230,
+        "b": 250
+    },
+    {
+        "id": 91,
+        "name_kr": "진한 연어",
+        "name_en": "Dark Salmon",
+        "hex": "#e9967a",
+        "r": 233,
+        "g": 150,
+        "b": 122
+    },
+    {
+        "id": 92,
+        "name_kr": "제비꽃",
+        "name_en": "Violet (Web)",
+        "hex": "#ee82ee",
+        "r": 238,
+        "g": 130,
+        "b": 238
+    },
+    {
+        "id": 93,
+        "name_kr": "창백한 황금 막대",
+        "name_en": "Pale Goldenrod",
+        "hex": "#eee8aa",
+        "r": 238,
+        "g": 232,
+        "b": 170
+    },
+    {
+        "id": 94,
+        "name_kr": "연한 산호",
+        "name_en": "Light Coral",
+        "hex": "#f08080",
+        "r": 240,
+        "g": 128,
+        "b": 128
+    },
+    {
+        "id": 95,
+        "name_kr": "카키색 옷감",
+        "name_en": "Khaki (X11) (Light Khaki)",
+        "hex": "#f0e68c",
+        "r": 240,
+        "g": 230,
+        "b": 140
+    },
+    {
+        "id": 96,
+        "name_kr": "앨리스 블루",
+        "name_en": "Alice Blue",
+        "hex": "#f0f8ff",
+        "r": 240,
+        "g": 248,
+        "b": 255
+    },
+    {
+        "id": 97,
+        "name_kr": "단물",
+        "name_en": "Honeydew",
+        "hex": "#f0fff0",
+        "r": 240,
+        "g": 255,
+        "b": 240
+    },
+    {
+        "id": 98,
+        "name_kr": "하늘빛",
+        "name_en": "Azure Mist/Web",
+        "hex": "#f0ffff",
+        "r": 240,
+        "g": 255,
+        "b": 255
+    },
+    {
+        "id": 99,
+        "name_kr": "샌디 브라운",
+        "name_en": "Sandy Brown",
+        "hex": "#f4a460",
+        "r": 244,
+        "g": 164,
+        "b": 96
+    },
+    {
+        "id": 100,
+        "name_kr": "밀",
+        "name_en": "Wheat",
+        "hex": "#f5deb3",
+        "r": 245,
+        "g": 222,
+        "b": 179
+    },
+    {
+        "id": 101,
+        "name_kr": "베이지",
+        "name_en": "Beige",
+        "hex": "#f5f5dc",
+        "r": 245,
+        "g": 245,
+        "b": 220
+    },
+    {
+        "id": 102,
+        "name_kr": "흰 연기",
+        "name_en": "White Smoke",
+        "hex": "#f5f5f5",
+        "r": 245,
+        "g": 245,
+        "b": 245
+    },
+    {
+        "id": 103,
+        "name_kr": "민트 크림",
+        "name_en": "Mint Cream",
+        "hex": "#f5fffa",
+        "r": 245,
+        "g": 255,
+        "b": 250
+    },
+    {
+        "id": 104,
+        "name_kr": "고스트 화이트",
+        "name_en": "Ghost White",
+        "hex": "#f8f8ff",
+        "r": 248,
+        "g": 248,
+        "b": 255
+    },
+    {
+        "id": 105,
+        "name_kr": "연어",
+        "name_en": "Salmon",
+        "hex": "#FA8072",
+        "r": 250,
+        "g": 128,
+        "b": 114
+    },
+    {
+        "id": 106,
+        "name_kr": "앤티크 화이트",
+        "name_en": "Antique White",
+        "hex": "#faebd7",
+        "r": 250,
+        "g": 235,
+        "b": 215
+    },
+    {
+        "id": 107,
+        "name_kr": "리넨",
+        "name_en": "Linen",
+        "hex": "#faf0e6",
+        "r": 250,
+        "g": 240,
+        "b": 230
+    },
+    {
+        "id": 108,
+        "name_kr": "연한 황금색 막대 노란색",
+        "name_en": "Light Goldenrod Yellow",
+        "hex": "#fafad2",
+        "r": 250,
+        "g": 250,
+        "b": 210
+    },
+    {
+        "id": 109,
+        "name_kr": "오래된 레이스",
+        "name_en": "Old Lace",
+        "hex": "#fdf5e6",
+        "r": 253,
+        "g": 245,
+        "b": 230
+    },
+    {
+        "id": 110,
+        "name_kr": "빨강",
+        "name_en": "Red",
+        "hex": "#f00",
+        "r": 255,
+        "g": 0,
+        "b": 0
+    },
+    {
+        "id": 111,
+        "name_kr": "자홍색",
+        "name_en": "Magenta",
+        "hex": "#f0f",
+        "r": 255,
+        "g": 0,
+        "b": 255
+    },
+    {
+        "id": 112,
+        "name_kr": "진한 분홍색",
+        "name_en": "Deep Pink",
+        "hex": "#ff1493",
+        "r": 255,
+        "g": 20,
+        "b": 147
+    },
+    {
+        "id": 113,
+        "name_kr": "오렌지 레드",
+        "name_en": "Orange-Red",
+        "hex": "#ff4500",
+        "r": 255,
+        "g": 69,
+        "b": 0
+    },
+    {
+        "id": 114,
+        "name_kr": "토마토",
+        "name_en": "Tomato",
+        "hex": "#ff6347",
+        "r": 255,
+        "g": 99,
+        "b": 71
+    },
+    {
+        "id": 115,
+        "name_kr": "핫 핑크",
+        "name_en": "Hot Pink",
+        "hex": "#ff69b4",
+        "r": 255,
+        "g": 105,
+        "b": 180
+    },
+    {
+        "id": 116,
+        "name_kr": "산호",
+        "name_en": "Coral",
+        "hex": "#ff7f50",
+        "r": 255,
+        "g": 127,
+        "b": 80
+    },
+    {
+        "id": 117,
+        "name_kr": "진한 주황색",
+        "name_en": "Dark Orange",
+        "hex": "#ff8c00",
+        "r": 255,
+        "g": 140,
+        "b": 0
+    },
+    {
+        "id": 118,
+        "name_kr": "가벼운 연어",
+        "name_en": "Light Salmon",
+        "hex": "#ffa07a",
+        "r": 255,
+        "g": 160,
+        "b": 122
+    },
+    {
+        "id": 119,
+        "name_kr": "주황색",
+        "name_en": "Orange (Web Color)",
+        "hex": "#ffa500",
+        "r": 255,
+        "g": 165,
+        "b": 0
+    },
+    {
+        "id": 120,
+        "name_kr": "라이트 핑크",
+        "name_en": "Light Pink",
+        "hex": "#ffb6c1",
+        "r": 255,
+        "g": 182,
+        "b": 193
+    },
+    {
+        "id": 121,
+        "name_kr": "분홍",
+        "name_en": "Pink",
+        "hex": "#ffc0cb",
+        "r": 255,
+        "g": 192,
+        "b": 203
+    },
+    {
+        "id": 122,
+        "name_kr": "금",
+        "name_en": "Gold (Web) (Golden)",
+        "hex": "#ffd700",
+        "r": 255,
+        "g": 215,
+        "b": 0
+    },
+    {
+        "id": 123,
+        "name_kr": "복숭아 퍼프",
+        "name_en": "Peach Puff",
+        "hex": "#ffdab9",
+        "r": 255,
+        "g": 218,
+        "b": 185
+    },
+    {
+        "id": 124,
+        "name_kr": "나바호 어 화이트",
+        "name_en": "Navajo White",
+        "hex": "#ffdead",
+        "r": 255,
+        "g": 222,
+        "b": 173
+    },
+    {
+        "id": 125,
+        "name_kr": "모카신",
+        "name_en": "Moccasin",
+        "hex": "#ffe4b5",
+        "r": 255,
+        "g": 228,
+        "b": 181
+    },
+    {
+        "id": 126,
+        "name_kr": "비스크",
+        "name_en": "Bisque",
+        "hex": "#ffe4c4",
+        "r": 255,
+        "g": 228,
+        "b": 196
+    },
+    {
+        "id": 127,
+        "name_kr": "안개가 자욱한 장미",
+        "name_en": "Misty Rose",
+        "hex": "#ffe4e1",
+        "r": 255,
+        "g": 228,
+        "b": 225
+    },
+    {
+        "id": 128,
+        "name_kr": "데친 아몬드",
+        "name_en": "Blanched Almond",
+        "hex": "#ffebcd",
+        "r": 255,
+        "g": 235,
+        "b": 205
+    },
+    {
+        "id": 129,
+        "name_kr": "파파야 채찍",
+        "name_en": "Papaya Whip",
+        "hex": "#ffefd5",
+        "r": 255,
+        "g": 239,
+        "b": 213
+    },
+    {
+        "id": 130,
+        "name_kr": "라벤더 블러쉬",
+        "name_en": "Lavender Blush",
+        "hex": "#fff0f5",
+        "r": 255,
+        "g": 240,
+        "b": 245
+    },
+    {
+        "id": 131,
+        "name_kr": "바다 조개",
+        "name_en": "Seashell",
+        "hex": "#fff5ee",
+        "r": 255,
+        "g": 245,
+        "b": 238
+    },
+    {
+        "id": 132,
+        "name_kr": "옥수수 실크",
+        "name_en": "Cornsilk",
+        "hex": "#fff8dc",
+        "r": 255,
+        "g": 248,
+        "b": 220
+    },
+    {
+        "id": 133,
+        "name_kr": "레몬 쉬폰",
+        "name_en": "Lemon Chiffon",
+        "hex": "#fffacd",
+        "r": 255,
+        "g": 250,
+        "b": 205
+    },
+    {
+        "id": 134,
+        "name_kr": "플로럴 화이트",
+        "name_en": "Floral White",
+        "hex": "#fffaf0",
+        "r": 255,
+        "g": 250,
+        "b": 240
+    },
+    {
+        "id": 135,
+        "name_kr": "눈",
+        "name_en": "Snow",
+        "hex": "#fffafa",
+        "r": 255,
+        "g": 250,
+        "b": 250
+    },
+    {
+        "id": 136,
+        "name_kr": "노랑",
+        "name_en": "Yellow",
+        "hex": "#ff0",
+        "r": 255,
+        "g": 255,
+        "b": 0
+    },
+    {
+        "id": 137,
+        "name_kr": "연노랑",
+        "name_en": "Light Yellow",
+        "hex": "#ffffe0",
+        "r": 255,
+        "g": 255,
+        "b": 224
+    },
+    {
+        "id": 138,
+        "name_kr": "상아",
+        "name_en": "Ivory",
+        "hex": "#fffff0",
+        "r": 255,
+        "g": 255,
+        "b": 240
+    },
+    {
+        "id": 139,
+        "name_kr": "하얀",
+        "name_en": "White",
+        "hex": "#fff",
+        "r": 255,
+        "g": 255,
+        "b": 255
+    }
+]
