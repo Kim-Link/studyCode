@@ -26,12 +26,8 @@ auth = (opensearch_user, opensearch_pass)
 s3 = boto3.client('s3', aws_access_key_id=aws_access_key, aws_secret_access_key=aws_secret_key, region_name=region_name)
 
 # data 폼 생성
-def json_to_bulk_data(entries, file_name):
+def json_to_bulk_data(entries, index_name):
     bulk_data = []
-
-    index_name = extract_index_name(file_name)
-
-    print("index name >> ", index_name)
 
     for entry in entries:
         upsert_line = {
@@ -115,30 +111,31 @@ def main():
     file_list = []
     if 'Contents' in response:
         for obj in response['Contents']:
-            if 'upsert/' in obj['Key'] and obj['Key'] != 'upsert/':
+            if 'test/' in obj['Key'] and obj['Key'] != 'test/':
                 file_list.append(obj['Key'])
 
     print('File List:', file_list)
+    index_name = "test_index_v1.0.7"
+    print("Index name : ", index_name)
 
     for j in file_list :
         target_file_name = j
         print('File Name:', target_file_name)
         response = s3.get_object(Bucket=bucket_name, Key=target_file_name)
-        print("check response")
         json_content = response['Body'].read().decode('utf-8')
-        print("check json_content")
         json_data = json.loads(json_content)
-        print("check json_data")
+
 
         # 배치 크기로 조정
         batch_size = 1000
         for i in range(0, len(json_data), batch_size):
             batch_entries = json_data[i:i + batch_size]
 
+
             # bulk data 형식으로 변환
-            bulk_data = json_to_bulk_data(batch_entries, target_file_name)
+            bulk_data = json_to_bulk_data(batch_entries, index_name)
             response = send_bulk_upsert_request(bulk_data)
-            print(response.text)
+            print(response)
             print(f"Bulk insert response for batch {i}:")
 
 
