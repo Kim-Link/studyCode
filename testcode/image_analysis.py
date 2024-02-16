@@ -28,7 +28,7 @@ for path in image_paths:
     preprocessed_images.append(preprocess_image(path))
 
 # 입력 이미지를 전처리합니다.
-input_image = preprocess_image("new_image.jpg")
+input_image = preprocess_image("https://shoes-image-bucket.s3.ap-northeast-2.amazonaws.com/luxury/dior/shoes_20231212115100211503.jpg")
 
 # 전처리된 이미지들을 NumPy 배열로 변환합니다.
 preprocessed_images = np.array(preprocessed_images)
