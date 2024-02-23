@@ -80,7 +80,7 @@
 토미힐피거,토미 힐피거=>TOMMY HILFIGER
 골든구스,golden goose=>goldengoose
 루시크루=>LUCY CREW
-오니츠카타이거,오니츠카 타이거=>ONITSUKA TIGER
+오니츠카타이거,오니츠카 타이거,오니츠카=>ONITSUKA TIGER
 엠엘비키즈,엠엘비 키즈=>MLB KIDS
 에펠클래식,에펠 클래식=>EIFFELCLASSIC
 플랩에프=>FLAP'F
@@ -103,11 +103,11 @@
 릴리슈=>LILYSHOE
 아카이브앱크=>ARCHIVEPKE
 헌터=>HUNTER
-프로스펙스,프로 스펙스,프로-스펙스=>PRO-SPECS
+프로스펙스,프로 스펙스=>PRO-SPECS
 티디앤=>TDN
 아키클래식,아키 클래식=>AKIII CLASSIC
 블랑토,블랑 토=>BLANC TOE
-비에스큐티바이클래시,비에스큐티 바이 클래시=>BSQT by Classy
+비에스큐티바이클래시,비에스큐티 바이 클래시,비에스큐티=>BSQT by Classy
 디스커버리 익스페디션,디스커버리익스페디션=>DISCOVERY EXPEDITION
 엠엘비=>MLB
 요위=>YOWE
@@ -117,7 +117,7 @@
 슈펜키즈=>SHOOPENKIDS
 크리스틴=>KRISTIN
 뮤즈몽=>MUSEMONT
-뉴발란스,뉴발,뉴 발란스=>NEW BALANCE
+뉴발란스,뉴발,뉴 발란스,newbalance=>NEW BALANCE
 야세=>YASE
 러프넥=>ROUGHNECK
 코모레비뮤지엄,코모레비 뮤지엄=>KOMOREBI MUSEUM
@@ -160,7 +160,7 @@
 스토키즈=>STOEKIDS
 커스텀에이드=>CUSTOMADE
 플리스멜번,플리스 멜번=>FLEECE MELBOURNE
-내셔널지오그래픽,NATIONAL GEOGRAPHIC,national geographic,nationalgeographic=>NATIONALGEOGRAPHIC
+내셔널지오그래픽,내셔널 지오 그래픽,내셔널 지오그래픽,내셔날지오그래픽,내셔날 지오 그래픽,내셔날 지오그래픽,네셔널지오그래픽,네셔널 지오그래픽,네셔널 지오 그래픽,NATIONAL GEOGRAPHIC,national geographic,nationalgeographic=>NATIONALGEOGRAPHIC
 타미진스,타미 진스=>TOMMY JEANS
 알몬도=>ALMONDO
 클라토=>CLATO
@@ -178,7 +178,7 @@
 세릭=>CERRIC
 레드윙=>REDWING
 브레노웰트=>BRENOWELT
-무신사스텐다드,무신사 스텐다드,무신사,무텐다드,무탠다드=>MUSINSA STANDARD
+무신사스탠다드, 무신사 스탠다드,무신사스텐다드,무신사 스텐다드,무신사,무텐다드,무탠다드=>MUSINSA STANDARD
 노베스타키즈,노베스타 키즈=>NOVESTA KIDS
 파스코로젠=>PASCOROZEN
 테바=>TEVA
@@ -224,7 +224,7 @@
 네거티브쓰리=>NEGATIVE THREE
 폴로 랄프 로렌,폴로,랄프로렌,폴로랄프로렌=>POLO RALPH LAUREN
 스컴버=>SCOMBER
-토앤토=>TAW&TOE
+토앤토,토엔토=>TAW&TOE
 쓰리투에이티=>THREE TO EIGHTY
 윙스풋=>WINGSFOOT
 페슈라=>FESSURA
@@ -246,7 +246,7 @@
 폴더라벨=>FOLDERLABEL
 몰링블링=>MOLING BLING
 오니츠카타이거키즈,오니츠카타이거 키즈=>ONITSUKA TIGER KIDS
-오즈어그웨어=>OZ UGG WEAR
+오즈어그웨어,오즈 어그 웨어,오즈웨어 어그=>OZ UGG WEAR
 피퍼=>FIPPER
 제뉴인그립=>GENUINEGRIP
 키데이=>KIDAY
@@ -267,7 +267,7 @@
 셰르뚜아 서울,셰르뚜아,세르뚜아,셰르뚜아서울=>CHERTOI SEOUL
 라슬로=>LASLOW
 머씨크라운,머씨,머씨 크라운=>MERCY CROWN
-마이클코어스=>MICHAEL KORS
+마이클코어스,MK=>MICHAEL KORS
 모스포츠,모 스포츠=>MO SPORTS
 엠티체르마트,엠티 체르마트,체르마트=>MT.ZERMATT
 내셔널지오그래픽 키즈,내셔널지오그래픽키즈=>NATIONAL GEOGRAPHIC KIDS
@@ -287,7 +287,7 @@
 챔피온=>CHAMPION
 나이나핏=>DYNAFIT
 모어모어노이즈=>MOREMORENOISE
-폴로랄프로렌칠드런,폴로 랄프로렌 칠드런=>POLO RALPH LAUREN CHILDREN
+폴로랄프로렌칠드런,폴로 랄프로렌 칠드런,폴로 키즈=>POLO RALPH LAUREN CHILDREN
 스토=>STOE
 캐치볼=>CATCH BALL
 이파네마키즈=>IPANEMAKIDS
@@ -352,7 +352,7 @@
 탐스 키즈,탐스키즈,탐즈 키즈,탐즈키즈=>TOMS KIDS
 배럴=>BARREL
 블루마운틴=>BLUE MOUNTAIN
-캘빈클라인 진,캘빈클라인진=>CALVIN KLEIN JEANS
+캘빈클라인 진,캘빈클라인진,CK=>CALVIN KLEIN JEANS
 셀레디프=>CELEDIFF
 길프=>GUILF
 할리데이비슨=>HARLEY-DAVIDSON
@@ -383,5 +383,5 @@
 로아앤제인=>ROANJANE
 살바토스=>SALVATOS
 스웨어=>SWEAR
-타미힐피거키즈,타미힐피커 키즈=>TOMMY HILFIGER KIDS
+타미힐피거키즈,타미힐피커 키즈,타미힐 키즈=>TOMMY HILFIGER KIDS
 예일=>YALE

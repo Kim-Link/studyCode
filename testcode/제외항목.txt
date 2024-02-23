@@ -1,0 +1,13 @@
+제외 항목 : 
+피렌체아뜨리에,피렌체 아뜨리에,피렌체아뜰리에,피렌체 아뜰리에=>FIRENZE ATELIER
+블랑수블랑,블랑 수 블랑,블랑 수블랑,블랑수 블랑=>BLANC SUR BLANC
+솔트앤초콜릿,솔트앤초콜렛,솔트 앤 초콜릿,솔트 앤 초콜렛=>SALT AND CHOCOLATE
+노스페이스,더노스페이스,노페,더 노스페이스,노스 페이스=>THE NORTH FACE
+미슈쏘머치,미슈 쏘머치,미슈 쏘 머치,MISHUU SO MUCH=>MISHUU SOMUCH
+아일랜드슬리퍼,아일랜드 슬리퍼,ISLAND SLIPPER=>ISLANDSLIPPER
+비에스큐티바이클래시,비에스큐티 바이 클래시,비에스큐티=>BSQT by Classy
+디스커버리 익스페디션,디스커버리익스페디션=>DISCOVERY EXPEDITION
+락피쉬웨더웨어,락피시웨더웨어,락피쉬 웨더웨어,락피시 웨더웨어=>ROCKFISH WEATHERWEAR
+알뜨알레,알뜨 알레,HALTE ALLEZ,halte allez,halteallez=>HALTEALLEZ
+내셔널지오그래픽,내셔널 지오 그래픽,내셔널 지오그래픽,내셔날지오그래픽,내셔날 지오 그래픽,내셔날 지오그래픽,네셔널지오그래픽,네셔널 지오그래픽,네셔널 지오 그래픽,NATIONAL GEOGRAPHIC,national geographic,nationalgeographic=>NATIONALGEOGRAPHIC
+무신사스탠다드, 무신사 스탠다드,무신사스텐다드,무신사 스텐다드,무신사,무텐다드,무탠다드=>MUSINSA STANDARD
