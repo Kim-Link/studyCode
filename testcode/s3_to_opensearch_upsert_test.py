@@ -115,7 +115,7 @@ def main():
                 file_list.append(obj['Key'])
 
     print('File List:', file_list)
-    index_name = "test_index_v1.0.1"
+    index_name = "test_index_v1.0.11"
     print("Index name : ", index_name)
 
     for j in file_list :
@@ -130,7 +130,6 @@ def main():
         batch_size = 1000
         for i in range(0, len(json_data), batch_size):
             batch_entries = json_data[i:i + batch_size]
-
 
             # bulk data 형식으로 변환
             bulk_data = json_to_bulk_data(batch_entries, index_name)
