@@ -26,10 +26,10 @@ auth = (opensearch_user, opensearch_pass)
 s3 = boto3.client('s3', aws_access_key_id=aws_access_key, aws_secret_access_key=aws_secret_key, region_name=region_name)
 
 # data 폼 생성
-def json_to_bulk_data(entries, file_name):
+def json_to_bulk_data(entries, file_name, version):
     bulk_data = []
 
-    index_name = extract_index_name(file_name)
+    index_name = extract_index_name(file_name, version)
 
     print("index name >> ", index_name)
 
@@ -49,13 +49,13 @@ def json_to_bulk_data(entries, file_name):
 
 
 # 인덱스 결정
-def extract_index_name(filename):
+def extract_index_name(filename, version):
     # 정규표현식을 사용하여 'luxury_clothes_brand', 'luxury_shoes_brand', 'shoes_brand'를 추출
     match = re.search(r'_(luxury_clothes|luxury_shoes|shoes)_brand(_[a-zA-Z0-9._ ]+)?\.json', filename)
 
     # 매치가 존재하면 인덱스를 반환, 아니면 에러를 반환
     if match:
-        return match.group(1) + '_brand'
+        return match.group(1) + '_brand' + version
     else:
         raise ValueError(f"{filename}에서 인덱스를 찾을 수 없습니다.")
 
@@ -129,6 +129,7 @@ def main():
         print("check json_content")
         json_data = json.loads(json_content)
         print("check json_data")
+        version = '_v1.0.1'
 
         # 배치 크기로 조정
         batch_size = 1000
@@ -136,7 +137,7 @@ def main():
             batch_entries = json_data[i:i + batch_size]
 
             # bulk data 형식으로 변환
-            bulk_data = json_to_bulk_data(batch_entries, target_file_name)
+            bulk_data = json_to_bulk_data(batch_entries, target_file_name, version)
             response = send_bulk_upsert_request(bulk_data)
             print(response.text)
             print(f"Bulk insert response for batch {i}:")
@@ -144,3 +145,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+    print('Finish!!')
