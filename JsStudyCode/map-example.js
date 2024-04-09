@@ -25,4 +25,4 @@ function test2() {
     console.log('output arr: ', result)
 }
 
-test2();
+test1();

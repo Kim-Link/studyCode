@@ -19,7 +19,7 @@ async function sampleFunc(){
 // 각 항목에 대해 asyncTask 함수를 적용하여 비동기 작업을 수행하고 결과를 모읍니다.
     const promises = data.map(asyncTask);
 
-    const result = await Promise.all(promises)
+    const result =await Promise.all(promises)
 
 
     // time end
