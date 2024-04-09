@@ -115,7 +115,7 @@ def main():
                 file_list.append(obj['Key'])
 
     print('File List:', file_list)
-    index_name = "test_index_v1.0.12"
+    index_name = "test_index_v3.1.0"
     print("Index name : ", index_name)
 
     for j in file_list :
