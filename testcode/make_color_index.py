@@ -3,8 +3,6 @@ import json
 import requests
 from dotenv import load_dotenv
 import os
-import re
-
 
 # load .env
 load_dotenv()
@@ -14,7 +12,6 @@ aws_access_key = os.environ.get('KEY_ID')
 aws_secret_key = os.environ.get('SECRET_ACCESS_KEY')
 region_name = os.environ.get('AWS_REGION_NAME')
 bucket_name = os.environ.get('AWS_S3_BUCKET_NAME')
-json_file_key = os.environ.get('AWS_S3_PATH')
 
 # OpenSearch 엔드포인트 및 인증 정보 설정
 open_search_endpoint = os.environ.get("AWS_OS_NODE")
@@ -25,59 +22,42 @@ auth = (opensearch_user, opensearch_pass)
 # S3 클라이언트 생성
 s3 = boto3.client('s3', aws_access_key_id=aws_access_key, aws_secret_access_key=aws_secret_key, region_name=region_name)
 
-# data 폼 생성
+# RGB -> Hex 코드로 변환하는 함수
+def rgb_to_hex(rgb):
+    return '{:02x}{:02x}{:02x}'.format(*rgb)
+
+# Hex -> RGB 코드로 변환하는 함수
+def hex_to_rgb(hex):
+    r = int(hex[0:2], 16)
+    g = int(hex[2:4], 16)
+    b = int(hex[4:6], 16)
+    return [r, g, b]
+
+
+# 변환된 데이터를 bulk 요청 형식으로 생성하는 함수
 def json_to_bulk_data(entries, index_name):
     bulk_data = []
 
     for entry in entries:
+        rgb_color = hex_to_rgb(entry)
         upsert_line = {
             "index": {
                 "_index": index_name,
-                "_id": entry["uuid"],
-                "op_type": "upsert"  # Specify upsert operation
             }
         }
-        doc_line = entry  # Use the entry directly, as it will be the document for upsert
+        doc_line = {
+            "rgb_vector": rgb_color,
+            "hex": entry
+        }
         bulk_data.append(json.dumps(upsert_line))
         bulk_data.append(json.dumps(doc_line))
 
     return "\n".join(bulk_data) + "\n"
 
-
-# 인덱스 결정
-def extract_index_name(filename):
-    # 정규표현식을 사용하여 'luxury_clothes_brand', 'luxury_shoes_brand', 'shoes_brand'를 추출
-    match = re.search(r'_(luxury_clothes|luxury_shoes|shoes)_brand(_[a-zA-Z0-9._ ]+)?\.json', filename)
-
-    # 매치가 존재하면 인덱스를 반환, 아니면 에러를 반환
-    if match:
-        return match.group(1) + '_brand'
-    else:
-        raise ValueError(f"{filename}에서 인덱스를 찾을 수 없습니다.")
-
-# POST _bulk 요청
-def send_bulk_update_request(bulk_data):
-    headers = {"Content-Type": "application/json"}
-    response = requests.post(open_search_endpoint + "/_bulk", data=bulk_data, headers=headers, auth=auth)
-    print(response)
-    if response.status_code == 200:
-        response_data = response.json()
-        # 각 문서의 응답 확인
-        for item in response_data['items']:
-            item_data = item['upsert']
-            if item_data['_shards']['failed'] > 0:
-                print(f"문서 업데이트 실패: {item_data['_id']}")
-            else:
-                print(f"문서 업데이트 성공: {item_data['_id']}")
-    else:
-        print(f"업데이트 요청 실패: {response.status_code}")
-
-    return response
-
+# bulk 요청을 보내는 함수
 def send_bulk_upsert_request(bulk_data):
     headers = {"Content-Type": "application/json"}
     response = requests.post(open_search_endpoint + "/_bulk", data=bulk_data, headers=headers, auth=auth)
-    print(response)
 
     if response.status_code == 200:
         response_data = response.json()
@@ -101,9 +81,7 @@ def send_bulk_upsert_request(bulk_data):
 
     return response
 
-# JSON을 Bulk API 데이터로 변환하여 OpenSearch에 삽입 또는 업데이트하는 메인 함수
 def main():
-
     # S3에서 JSON 파일 읽기
     response = s3.list_objects_v2(Bucket=bucket_name)
 
@@ -111,32 +89,36 @@ def main():
     file_list = []
     if 'Contents' in response:
         for obj in response['Contents']:
-            if 'test/' in obj['Key'] and obj['Key'] != 'test/':
+            if 'upsert/' in obj['Key'] and obj['Key'] != 'upsert/':
                 file_list.append(obj['Key'])
 
     print('File List:', file_list)
-    index_name = "test_index_v3.2.0"
-    print("Index name : ", index_name)
 
-    for j in file_list :
-        target_file_name = j
-        print('File Name:', target_file_name)
-        response = s3.get_object(Bucket=bucket_name, Key=target_file_name)
+    color_data = set()  # 중복된 데이터를 방지하기 위해 set 자료구조 사용
+
+    for file_name in file_list:
+        print('File Name:', file_name)
+        response = s3.get_object(Bucket=bucket_name, Key=file_name)
         json_content = response['Body'].read().decode('utf-8')
         json_data = json.loads(json_content)
 
+        # "rawColors"에서 RGB 데이터 추출하여 중복 없이 추가
+        for item in json_data:
+            if 'rawColors' in item:
+                colors = item['rawColors']
+                for color in colors:
+                    color_data.add(color)
 
-        # 배치 크기로 조정
-        batch_size = 1000
-        for i in range(0, len(json_data), batch_size):
-            batch_entries = json_data[i:i + batch_size]
+    color_data = list(color_data)
 
-            # bulk data 형식으로 변환
-            bulk_data = json_to_bulk_data(batch_entries, index_name)
-            response = send_bulk_upsert_request(bulk_data)
-            print(response)
-            print(f"Bulk insert response for batch {i}:")
 
+    # Elasticsearch에 색상 인덱스 업데이트를 위한 bulk 요청 데이터 생성
+    bulk_data = json_to_bulk_data(color_data, "color-knn_v1.1.0")
+
+    # print(len(color_data))
+    # bulk 요청 전송
+    send_bulk_upsert_request(bulk_data)
 
 if __name__ == "__main__":
     main()
+    print('Done!!!')

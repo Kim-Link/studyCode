@@ -3,17 +3,7 @@ import numpy as np
 from sklearn.metrics.pairwise import cosine_similarity
 
 # 이미지 파일 경로
-image_paths = [
-    "https://shoes-image-bucket.s3.ap-northeast-2.amazonaws.com/ecommerce/musinsa/shoes_20231127221417772773.jpg",
-    "https://shoes-image-bucket.s3.ap-northeast-2.amazonaws.com/ecommerce/musinsa/shoes_20231127161920213658.jpg",
-    "https://shoes-image-bucket.s3.ap-northeast-2.amazonaws.com/ecommerce/musinsa/shoes_20231127161919911338.jpg",
-    "https://shoes-image-bucket.s3.ap-northeast-2.amazonaws.com/ecommerce/musinsa/shoes_20231127161920501975.jpg",
-    "https://shoes-image-bucket.s3.ap-northeast-2.amazonaws.com/ecommerce/musinsa/shoes_20231127161921102774.jpg",
-    "https://shoes-image-bucket.s3.ap-northeast-2.amazonaws.com/ecommerce/musinsa/shoes_20231127161920645272.jpg",
-    "https://shoes-image-bucket.s3.ap-northeast-2.amazonaws.com/ecommerce/musinsa/shoes_20231127161920057472.jpg",
-    "https://shoes-image-bucket.s3.ap-northeast-2.amazonaws.com/ecommerce/musinsa/shoes_20231127161920940581.jpg",
-    "https://shoes-image-bucket.s3.ap-northeast-2.amazonaws.com/luxury/dior/shoes_20231212115434486769.jpg"
-]
+image_paths = []
 
 def preprocess_image(image_path):
     # 이미지를 읽고 크기를 조정합니다.

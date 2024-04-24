@@ -25,12 +25,9 @@ auth = (opensearch_user, opensearch_pass)
 # S3 클라이언트 생성
 s3 = boto3.client('s3', aws_access_key_id=aws_access_key, aws_secret_access_key=aws_secret_key, region_name=region_name)
 
-def process_item(item):
-    category = item.get('category', '')
-    sub_category = item.get('subCategory', '')
-    category_path = f"{category} > {sub_category}" if sub_category else category
-    item['categoryPath'] = category_path
-    return item
+def convert_to_hex(color):
+    # Convert RGB color to hex
+    return '{:02x}{:02x}{:02x}'.format(*color)
 
 def main():
     # S3에서 JSON 파일 읽기
@@ -51,18 +48,24 @@ def main():
         json_content = response['Body'].read().decode('utf-8')
         json_data = json.loads(json_content)
 
-        # Process data
-        processed_data = [process_item(item) for item in json_data]
+
+        # Convert rawColors to hex and store in hexColors, then remove rawColors
+        for item in json_data:
+            if 'rawColors' in item:
+                hex_colors = [convert_to_hex(color) for color in item['rawColors']]
+                item['rawColors'] = hex_colors
+            else:
+                item['rawColors'] = []
 
         # Save processed data
         file_name_safe = re.sub(r'[^\w\s]', '', file_name)  # 특수 문자 제거
         processed_file_name = f"processed_{file_name_safe}.json"
         with open(processed_file_name, 'w', encoding='utf-8') as f:
-            json.dump(processed_data, f, indent=2, ensure_ascii=False)
+            json.dump(json_data, f, indent=2, ensure_ascii=False)
 
         # Upload processed data to target bucket
         with open(processed_file_name, 'rb') as f:
-            s3.upload_fileobj(f, bucket_name, f"upsert/{processed_file_name}")
+            s3.upload_fileobj(f, bucket_name, f"upsert/color_{processed_file_name}")
 
         # Remove local processed file
         os.remove(processed_file_name)
