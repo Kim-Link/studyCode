@@ -128,7 +128,7 @@ def main():
         print("check json_content")
         json_data = json.loads(json_content)
         print("check json_data")
-        version = '_v3.2.0'
+        version = '_v3.2.1'
 
         # 배치 크기로 조정
         batch_size = 1000
