@@ -12,3 +12,6 @@ staticfiles
 .env
 .vscode
 .idea
+node_modules
+**/node_modules
+**/venv

@@ -128,7 +128,8 @@ def main():
         print("check json_content")
         json_data = json.loads(json_content)
         print("check json_data")
-        version = '_v3.2.1'
+        version = '_v3.2.2'
+        # version = '_test'
 
         # 배치 크기로 조정
         batch_size = 1000
@@ -136,7 +137,6 @@ def main():
             batch_entries = json_data[i:i + batch_size]
 
             index_name = extract_index_name(target_file_name, version)
-            print(index_name)
 
             # bulk data 형식으로 변환
             bulk_data = json_to_bulk_data(batch_entries, index_name)
